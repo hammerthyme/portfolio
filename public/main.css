@@ -1,0 +1,126 @@
+#app {
+  margin: 0 3em;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+#fixed-nav {
+  backface-visibility: hidden;
+  height: 52px;
+  position: absolute;
+  width: 100%;
+  pointer-events: auto;
+  display: block;
+  text-align: right;
+}
+#fixed-nav a {
+  color: #5e2605; /* This is overriding your color rule in .name */
+  display: inline;
+  height: 70px;
+  padding: 0 0.95em;
+  text-decoration: none;
+}
+.nav-list {
+  display: inline;
+  padding: 10px 10px 0px 0px;
+  margin-top: 60%;
+  font-size: 20px;
+}
+.nav-left {
+  float: left;
+  padding: 0;
+}
+.nav-right {
+  float: right;
+}
+.nav-right:last-child {
+  margin-right: 3em;
+}
+#name {
+  font-size: 35px;
+}
+.small-icon {
+  height: 30px;
+}
+
+#intro {
+  top: 3em;
+  left: 0;
+  position: relative;
+}
+#technologies {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+.tech-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tech-container img {
+  height: 75px;
+  margin: 2em;
+}
+
+.projects {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.single-project-container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 2.5em 2em;
+}
+.project-text-container {
+  max-width: 400px;
+  margin-right: 2em;
+}
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+.project-image-container {
+  width: 32em;
+  border: 1px solid hsla(0, 0%, 54%, 0.2);
+  border-radius: 4px;
+}
+.project-image {
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  margin-top: 2em;
+}
+
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  width: 60%;
+}
+
+.project-hr {
+  margin: 3em auto;
+}
+
+.tech-hr {
+  margin: 3em auto;
+}
