@@ -19,3 +19,18 @@ techImages.forEach(imgURL => {
   img.src = imgURL;
   techContainer.appendChild(img);
 });
+
+window.onload = function() {
+  // const body = document.getElementsByName("body");
+  document.body.style.overflow = "auto";
+  document.body.style.height = "auto";
+};
+
+// var prevScrollpos = window.pageYOffset;
+let timer;
+const navBar = document.getElementById("fixed-nav");
+window.onscroll = function() {
+  clearTimeout(timer);
+  navBar.style.top = "-100px";
+  timer = setTimeout(() => (navBar.style.top = "0"), 750);
+};
