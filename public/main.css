@@ -12,7 +12,7 @@ body {
 }
 
 #app {
-  margin: 0 3em;
+  margin: 0 5em;
 }
 
 #nav {
@@ -51,7 +51,9 @@ a:hover{
 .small-icon:hover{
   transform: scale(1.1);
 }
-
+main{
+  margin: 0 5em;
+}
 
 #intro {
   top: 3em;
