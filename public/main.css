@@ -1,3 +1,11 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+/* this and above css keep applied widths consistent */
+
 body {
   overflow: hidden;
   height: 100%;
@@ -7,51 +15,43 @@ body {
   margin: 0 3em;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+#nav {
+  display: flex;
+  align-items:center;
   width: 100%;
+  padding-top: 2em;
 }
-#fixed-nav {
-  backface-visibility: hidden;
-  height: 52px;
-  position: absolute;
-  width: 100%;
-  pointer-events: auto;
-  display: block;
-  text-align: right;
+a{
+  transition: all .2s ease-in-out;
+  color:inherit;
 }
-#fixed-nav a {
-  color: #5e2605; /* This is overriding your color rule in .name */
-  display: inline;
-  height: 70px;
-  padding: 0 0.95em;
-  text-decoration: none;
+a:hover{
+  transform: scale(1.1);
 }
-.nav-list {
-  display: inline;
-  padding: 10px 10px 0px 0px;
-  margin-top: 60%;
+#nav-name {
+  font-size: 35px;
+}
+#nav-projects {
   font-size: 20px;
-}
-.nav-left {
-  float: left;
-  padding: 0;
+  margin-left: 1.5em;
+  color:inherit;
+  text-decoration: inherit;
+  /* float:left; */
 }
 .nav-right {
-  float: right;
+  margin-left: auto;
 }
-.nav-right:last-child {
-  margin-right: 3em;
-}
-#name {
-  font-size: 35px;
+.nav-right > a{
+  margin: auto 1em;
 }
 .small-icon {
   height: 30px;
+  transition: all .2s ease-in-out;
 }
+.small-icon:hover{
+  transform: scale(1.1);
+}
+
 
 #intro {
   top: 3em;
