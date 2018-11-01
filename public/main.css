@@ -1,3 +1,4 @@
+@media only screen and (min-width: 768px){
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -9,6 +10,7 @@ html {
 body {
   overflow: hidden;
   height: 100%;
+  background-color: #F8EEE7;
 }
 
 #app {
@@ -79,26 +81,40 @@ main{
   margin-top: 2em;
   display: flex;
   flex-direction: column;
+  background-color: #f8ebe2;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: thin;
+}
+#projects-header{
+  margin-left: 1.5em;
 }
 .single-project-container {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+  display: flex; 
   margin: 2.5em 2em;
 }
 .project-text-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items:center; 
+  justify-content: center;
   max-width: 400px;
   margin-right: 2em;
 }
+.project-text{
+  font-size: 20px;
+  text-align: center;
+  margin-top: -0.2em;
+}
 .project-links {
-  display: flex;
+  display: flex; 
   flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 2em;
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 1em;
 }
 .project-image-container {
-  width: 32em;
+  width: 25em;
   border: 1px solid hsla(0, 0%, 54%, 0.2);
   border-radius: 4px;
 }
@@ -130,4 +146,5 @@ hr {
 
 .tech-hr {
   margin: 3em auto;
+}
 }
