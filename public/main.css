@@ -4,6 +4,7 @@
 }
 html {
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 /* this and above css keep applied widths consistent */
 
@@ -22,6 +23,7 @@ body {
   align-items:center;
   width: 100%;
   padding-top: 2em;
+  padding-bottom: 2em;
 }
 a{
   transition: all .2s ease-in-out;
@@ -82,9 +84,10 @@ main{
   display: flex;
   flex-direction: column;
   background-color: #f8ebe2;
-  border-radius: 20px;
+  border-radius: 15px;
   border-style: solid;
   border-width: thin;
+  border-color: white;
 }
 #projects-header{
   margin-left: 1.5em;
@@ -92,6 +95,10 @@ main{
 .single-project-container {
   display: flex; 
   margin: 2.5em 2em;
+}
+.reverse-single-project{
+  flex-direction: row-reverse;
+
 }
 .project-text-container {
   display: flex; 
@@ -105,6 +112,9 @@ main{
   font-size: 20px;
   text-align: center;
   margin-top: -0.2em;
+}
+.safecycle-text-container{
+  width: 80%;
 }
 .project-links {
   display: flex; 
