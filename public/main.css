@@ -38,14 +38,21 @@ main{
   align-items:center;
   width: 100%;
   padding-top: 2em;
-  padding-bottom: 2em;
+
+}
+#nav * {
+  margin: 0.25em;
 }
 #nav-name {
-  font-size: 25px;
+  font-size: 35px;
+}
+#nav-projects {
+  font-size: 20px;
+  color:#772233;
+  text-decoration: inherit;
 }
 .small-icon {
   height: 30px;
-  transition: all .2s ease-in-out;
 }
 
 #intro {
@@ -85,23 +92,29 @@ main{
   display: flex; 
   flex-direction: column;
   align-items:center; 
-  /* margin: 2.5em 2em; */
 }
 .project-text-container {
   display: flex; 
   flex-direction: column; 
   align-items:center; 
   justify-content: center;
+  max-width: 400px;
   margin-bottom: 1em;
 }
 .project-text{
   font-size: 20px;
   text-align: center;
+  margin: 0.5em 1em;
 }
 .project-links {
   display: flex; 
   flex-direction: row;
   justify-content: center;
+}
+.project-links a{
+  margin-right: 0.5em;
+  color:#772233;
+  text-decoration: inherit;
 }
 .project-image-container {
   width: 250px;
@@ -114,6 +127,9 @@ main{
 }
 .project-hr {
  margin-top: 1.5em;
+}
+.last-project{
+  margin-bottom:1em;
 }
 }
 
@@ -144,7 +160,6 @@ a:hover{
   margin-left: 1.5em;
   color:inherit;
   text-decoration: inherit;
-  /* float:left; */
 }
 .nav-right {
   margin-left: auto;
@@ -227,6 +242,8 @@ main{
 }
 .project-links a{
   margin-right: 1em;
+  text-decoration: inherit;
+  color:#772233 
 }
 .project-image-container {
   width: 400px;
