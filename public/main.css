@@ -27,38 +27,53 @@ hr {
 #nav-name {
   font-size: 25px;
 }
+#nav {
+  display: flex;
+  align-items:center;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+a{
+  transition: all .2s ease-in-out;
+  color:inherit;
+}
+a:hover{
+  transform: scale(1.1);
+}
 
 #intro {
   display: flex; 
   flex-direction: column; 
-   align-items:center; 
+  align-items:center; 
   text-align: center;
   margin: 2em auto 4em auto;
+  max-width: 700px;
+}
+#about-me {
+  line-height: 1.5;
 }
 
 #technologies {
   display: inline-block;
-  /* position: relative; */
   text-align: center;
-  /* margin-top: 4em; */
   margin-bottom: 4em;
+   background-color: #f0f1f9ee;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
 }
 
 @media all and (max-width: 767px) {
 main{
-
   margin:0px;
   padding: 0px;
   width: 100%;
 }
 
 #nav {
-  display: flex;
   flex-direction: column;
-  align-items:center;
-  width: 100%;
-  padding-top: 2em;
-
 }
 #nav * {
   margin: 0.25em;
@@ -71,6 +86,33 @@ main{
 }
 .small-icon {
   height: 30px;
+}
+
+/* -------- */
+
+
+#nav-projects {
+  font-size: 20px;
+  margin-left: 1.5em;
+  color:inherit;
+  text-decoration: inherit;
+}
+.nav-right {
+  margin-left: auto;
+}
+.nav-right > a{
+  margin: auto 1em;
+}
+.small-icon {
+  height: 30px;
+  transition: all .2s ease-in-out;
+}
+.small-icon:hover{
+  transform: scale(1.1);
+}
+
+#intro {
+  max-width: 450px;
 }
 
 .tech-container {
@@ -88,7 +130,7 @@ main{
   margin-top: 1em;
   display: flex;
   flex-direction: column;
-  background-color: #f8ebe2;
+  background-color: #f0f1f9ee;
   border-radius: 15px;
   border-style: solid;
   border-width: thin;
@@ -149,20 +191,12 @@ main{
   margin: 0 5em;
 }
 
-#nav {
-  display: flex;
-  align-items:center;
-  width: 100%;
-  padding-top: 2em;
-  padding-bottom: 2em;
+main{
+  margin: 0 5em;
 }
-a{
-  transition: all .2s ease-in-out;
-  color:inherit;
-}
-a:hover{
-  transform: scale(1.1);
-}
+
+
+
 
 #nav-projects {
   font-size: 20px;
@@ -183,9 +217,7 @@ a:hover{
 .small-icon:hover{
   transform: scale(1.1);
 }
-main{
-  margin: 0 5em;
-}
+
 
 
 
@@ -202,6 +234,7 @@ main{
 
 .projects {
   margin-top: 2em;
+  margin-bottom: 8em;
   display: flex;
   flex-direction: column;
   background-color: #f0f1f9ee;
