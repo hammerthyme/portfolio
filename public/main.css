@@ -7,7 +7,6 @@ html {
 }
 /* this and above css keep applied widths consistent */
 body {
-  overflow: hidden;
   height: 100%;
   background-color: #f4f4f9;
 }
@@ -34,11 +33,23 @@ hr {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-a{
-  transition: all .2s ease-in-out;
+#nav-projects {
+  font-size: 20px;
+  margin-left: 1.5em;
   color:inherit;
+  text-decoration: inherit;
 }
-a:hover{
+.nav-right {
+  margin-left: auto;
+}
+.nav-right > a{
+  margin: auto 1em;
+}
+.small-icon {
+  height: 30px;
+  transition: all .2s ease-in-out;
+}
+.small-icon:hover{
   transform: scale(1.1);
 }
 
@@ -65,6 +76,33 @@ a:hover{
   border-color: white;
 }
 
+.tech-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tech-container img {
+  height: 75px;
+  margin: 2em;
+}
+
+.projects {
+  margin-top: 2em;
+  margin-bottom: 6em;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f1f9ee;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+}
+#projects-header{
+  text-align: center;
+}
+
+
 @media all and (max-width: 767px) {
 main{
   margin:0px;
@@ -78,37 +116,8 @@ main{
 #nav * {
   margin: 0.25em;
 }
-
 #nav-projects {
-  font-size: 20px;
   color:#772233;
-  text-decoration: inherit;
-}
-.small-icon {
-  height: 30px;
-}
-
-/* -------- */
-
-
-#nav-projects {
-  font-size: 20px;
-  margin-left: 1.5em;
-  color:inherit;
-  text-decoration: inherit;
-}
-.nav-right {
-  margin-left: auto;
-}
-.nav-right > a{
-  margin: auto 1em;
-}
-.small-icon {
-  height: 30px;
-  transition: all .2s ease-in-out;
-}
-.small-icon:hover{
-  transform: scale(1.1);
 }
 
 #intro {
@@ -116,31 +125,24 @@ main{
 }
 
 .tech-container {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 .tech-container img {
-  height: 75px;
   margin: 15px;
 }
 
 .projects {
   margin-top: 1em;
-  display: flex;
-  flex-direction: column;
-  background-color: #f0f1f9ee;
-  border-radius: 15px;
-  border-style: solid;
-  border-width: thin;
-  border-color: white;
 }
+
+
+
 #projects-header{
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
+
+
 .single-project-container {
   display: flex; 
   flex-direction: column;
@@ -197,55 +199,6 @@ main{
 
 
 
-
-#nav-projects {
-  font-size: 20px;
-  margin-left: 1.5em;
-  color:inherit;
-  text-decoration: inherit;
-}
-.nav-right {
-  margin-left: auto;
-}
-.nav-right > a{
-  margin: auto 1em;
-}
-.small-icon {
-  height: 30px;
-  transition: all .2s ease-in-out;
-}
-.small-icon:hover{
-  transform: scale(1.1);
-}
-
-
-
-
-.tech-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.tech-container img {
-  height: 75px;
-  margin: 2em;
-}
-
-.projects {
-  margin-top: 2em;
-  margin-bottom: 8em;
-  display: flex;
-  flex-direction: column;
-  background-color: #f0f1f9ee;
-  border-radius: 15px;
-  border-style: solid;
-  border-width: thin;
-  border-color: white;
-}
-#projects-header{
-  text-align: center;
-}
 .single-project-container {
   display: flex; 
   margin: 2.5em 2em;
